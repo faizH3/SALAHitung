@@ -1,7 +1,7 @@
 import math
 
 
-def part3():
+def part3():  # daftar ke3 kalkulus persamaan dan pertidaksamaan
     print('''
     |>3.  PART 3(PERSAMAAN DAN PERTIDAKSAMAAN------------<|
     menu:
@@ -11,7 +11,7 @@ def part3():
     00. keluar    
     ''')
     menu = input('menu: ')
-    if menu=='1':
+    if menu == '1':
         while True:
             print('''
 bentuk umum persmnaan kuadrat ax^2+bx+c=0
@@ -100,8 +100,9 @@ x1 = 1     |x2  = -2
                  %s
             x2 = %s
             ''' % (
-            b, b, a, c, a, bb, b_2, ac, penyebut, bb, d, penyebut, bb, akar, penyebut, bb, akar, penyebut, xa, penyebut,
-            x1, bb, akar, penyebut, xb, penyebut, x2))
+                b, b, a, c, a, bb, b_2, ac, penyebut, bb, d, penyebut, bb, akar, penyebut, bb, akar, penyebut, xa,
+                penyebut,
+                x1, bb, akar, penyebut, xb, penyebut, x2))
             print('jadi akar-akar persamaannya adalah, x1 = %s dan dan x2 = %s' % (x1, x2))
             print('\n[yes|no|exit]')
             a = input("ulangi lagi[y/n/x]: ")
@@ -111,10 +112,10 @@ x1 = 1     |x2  = -2
                 print()
             elif a == 'x' or a == 'X':
                 exit()
+        # !!!!!!tambah pertidaksamaan
 
 
-
-def part1():
+def part1():  # daftar ke1 kalkulus
     print('''
     |>1.  PART 1(FUNGSI LINEAR)--------------------------<|
     bentuk operasi:
@@ -124,7 +125,7 @@ def part1():
     00. exit
     ''')
     menu = input('menu: ')
-    if menu=='1':
+    if menu == '1':
         while True:
             print('''
     contoh:
@@ -138,8 +139,8 @@ def part1():
             b = float(input('input b: '))
             print('misal, x = 0')
             print('y = %s(0)+(%s)' % (a, b))
-            x = b/a
-            y = a*0+b
+            x = b / a
+            y = a * 0 + b
             print('y = %s ----->(0,%s)\n' % (y, y))
             print('misal, y = 0')
             print('(0) = %sx + %s' % (a, b))
@@ -147,19 +148,18 @@ def part1():
             print('       %s' % (b))
             print('x = -------')
             print("       %s" % (a))
-            ab = 'x = %.2f ------>(%.2f,0)' % (x,x)
+            ab = 'x = %.2f ------>(%.2f,0)' % (x, x)
             print(ab)
             print('titik koordinatnya adalah (0,%.2f) dan (%.2f,0)' % (y, x))
             input()
             a = input('try again(y/n)? ')
-            if a=='y' or a=='Y':
+            if a == 'y' or a == 'Y':
                 print()
-            elif a=='n' or a=='N':
+            elif a == 'n' or a == 'N':
                 break
 
 
-
-def luas_segitiga():
+def luas_segitiga():  # daftar luas bangun datar
     while True:
         print('ditanya: ')
         print("menu: ")
@@ -169,66 +169,66 @@ def luas_segitiga():
               '0. back')
         # print('ditanya:')
         menu = input('input menu: ')
-        if menu=='0':
+        if menu == '0':
             daftarlist()
-        elif menu=='1':
+        elif menu == '1':
             while True:
                 a = float(input('alas: '))
                 t = float(input('tinggi: '))
-                luas = (a*t)/2
+                luas = (a * t) / 2
                 print(f'       {a}x{t}\n'
                       'luas = -------\n'
                       f'          2\n'
-                      f'luas = %s'%(luas))
+                      f'luas = %s' % (luas))
                 a = input('try again(y/n)? ')
-                if a=='y' or a=='Y':
+                if a == 'y' or a == 'Y':
                     print()
-                elif a=='n' or a=='N':
+                elif a == 'n' or a == 'N':
                     break
-        elif menu=='2':
+        elif menu == '2':
             while True:
                 luas = int(input("luas: "))
                 t = int(input("tinggi: "))
-                a = (luas*2)/t
+                a = (luas * 2) / t
                 print('       %s x 2\n'
                       'alas = ------\n'
                       '          %s\n'
-                      'alas = %.3s'%(luas, t, a))
+                      'alas = %.3s' % (luas, t, a))
                 a = input("try again(y/n)? ")
-                if a=='y' or a=='Y':
+                if a == 'y' or a == 'Y':
                     print()
-                elif a=='n' or a=='N':
+                elif a == 'n' or a == 'N':
                     break
-        elif menu=='3':
+        elif menu == '3':
             while True:
                 luas = int(input('luas: '))
                 a = int(input('alas: '))
-                t = (luas*2)/a
+                t = (luas * 2) / a
                 print('         %s x 2\n'
                       'tinggi = ------\n'
                       '            %s\n'
-                      'tinggi = %.2s'%(luas, a, t))
+                      'tinggi = %.2s' % (luas, a, t))
                 a = input('try again(y/n)? ')
-                if a=='y' or a=='Y':
+                if a == 'y' or a == 'Y':
                     print()
-                elif a=='n' or a=='N':
+                elif a == 'n' or a == 'N':
                     break
 
 
-def luas_persegi():
+def luas_persegi():  # daftar luas bangun datar
     while True:
         print('2. luas persegi')
         s = int(input("sisi: "))
-        luas = s*s
+        luas = s * s
         print(f'luas = {s} x {s} = {luas}')
         a = input('try again(y/n)? ')
-        if a=='y' or a=='Y':
+        if a == 'y' or a == 'Y':
             print()
-        elif a=='n' or a=='N':
+        elif a == 'n' or a == 'N':
             luasbangundatar()
 
 
-def luas_persegiPanjang():
+def luas_persegiPanjang():  # daftar luas bangun datar
     while True:
         print('3. luas persegi panjang')
         print('Ditanya: \n'
@@ -238,53 +238,53 @@ def luas_persegiPanjang():
               '0. kembali\n'
               '00. keluar')
         menu = input('pilih menu: ')
-        if menu=='1':
+        if menu == '1':
             while True:
                 p = float(input('panjang: '))
                 l = float(input('lebar: '))
-                luas = p*l
+                luas = p * l
                 print('luas  = p x l')
-                print('luas = %s x %s = %s'%(p, l, luas))
+                print('luas = %s x %s = %s' % (p, l, luas))
                 a = input('try again(y/n)? ')
-                if a=='y' or a=='Y':
+                if a == 'y' or a == 'Y':
                     print()
-                elif a=='n' or a=='N':
+                elif a == 'n' or a == 'N':
                     break
-        elif menu=='2':
+        elif menu == '2':
             while True:
                 luas = float(input('luas: '))
                 l = float(input('lebar: '))
-                p = luas/l
+                p = luas / l
                 print('panjang = luas / lebar')
                 print('          %s\n'
                       'panjang = --\n'
-                      '          %s'%(luas, l))
+                      '          %s' % (luas, l))
                 print(f'panjang = {p}')
                 a = input('try again(y/n)? ')
-                if a=='y' or a=='Y':
+                if a == 'y' or a == 'Y':
                     print()
-                elif a=='n' or a=='N':
+                elif a == 'n' or a == 'N':
                     break
-        elif menu=='3':
+        elif menu == '3':
             while True:
                 luas = float(input('luas: '))
                 p = float(input('panjang: '))
-                l = luas/p
+                l = luas / p
                 print('lebar = luas / panjang')
                 print('        %s\n'
                       'lebar = --\n'
-                      '        %s\n'%(luas, p))
+                      '        %s\n' % (luas, p))
                 print(f'lebar = {l}')
                 a = input('try again(y/n)? ')
-                if a=='y' or a=='Y':
+                if a == 'y' or a == 'Y':
                     print()
-                elif a=='n' or a=='N':
+                elif a == 'n' or a == 'N':
                     break
-        elif menu=='0':
+        elif menu == '0':
             luasbangundatar()
 
 
-def luas_lingkaran():
+def luas_lingkaran():  # daftar luas bangun datar
     while True:
         print("diketahui: \n"
               "1. jari-jari\n"
@@ -293,63 +293,65 @@ def luas_lingkaran():
               "0. kembali\n"
               "00. exit")
         menu = input("pilih menu: ")
-        if menu=='1':
+        if menu == '1':
             while True:
                 r = float(input("jari-jari: "))
-                phi = 22/7
-                pangkat = r**2
-                luas = phi*(r**2)
+                phi = 22 / 7
+                pangkat = r ** 2
+                luas = phi * (r ** 2)
                 print("luas = phi x r^2")
-                print('luas = 22/7 x %s^2'%(r))
-                print("luas = 22/7 x %.2f"%(pangkat))
-                print('luas = %.3s'%(luas))
+                print('luas = 22/7 x %s^2' % (r))
+                print("luas = 22/7 x %.2f" % (pangkat))
+                print('luas = %.3s' % (luas))
                 a = input("try again(y/n)? ")
-                if a=='y' or a=='Y':
+                if a == 'y' or a == 'Y':
                     print()
-                elif a=='n' or a=='N':
+                elif a == 'n' or a == 'N':
                     break
-        elif menu=='2':
+        elif menu == '2':
             while True:
                 d = float(input('diameter: '))
-                r = d/2
-                phi = 22/7
-                pangkat = r**2
-                luas = phi*(r**2)
-                print('ubah diamater ke jari-jari: %.2f/2 = %.2f'%(d, r))
+                r = d / 2
+                phi = 22 / 7
+                pangkat = r ** 2
+                luas = phi * (r ** 2)
+                print('ubah diamater ke jari-jari: %.2f/2 = %.2f' % (d, r))
                 print('luas = phi x r^2')
-                print('luas = 22/7 x %.2f^2'%(r))
-                print('luas = 22/7 x %.2f'%(pangkat))
-                print('luas = %.2f'%(luas))
+                print('luas = 22/7 x %.2f^2' % (r))
+                print('luas = 22/7 x %.2f' % (pangkat))
+                print('luas = %.2f' % (luas))
                 a = input('try again(/n)? ')
-                if a=='y' or a=='Y':
+                if a == 'y' or a == 'Y':
                     print()
-                elif a=='n' or a=='N':
+                elif a == 'n' or a == 'N':
                     break
-        elif menu=='3':
+        elif menu == '3':
             while True:
                 print('diketahui: ')
                 luas = float(input(''))
-                phi = 22/7
+                phi = 22 / 7
                 r = luas / phi
                 print('r = luaas/phi')
-                print('r = %.2f / %.2f'%(luas, phi))
-                print('r = %.2f'%(r))
+                print('r = %.2f / %.2f' % (luas, phi))
+                print('r = %.2f' % (r))
                 a = input('try again(y/n)? ')
-                if a=='y' or a=='Y':
+                if a == 'y' or a == 'Y':
                     print()
-                elif a=='n' or a=='N':
+                elif a == 'n' or a == 'N':
                     break
-        elif menu=='0':
+        elif menu == '0':
             luasbangundatar()
-        elif menu=='00':
+        elif menu == '00':
             exit()
 
 
-def luas_trapesium():
+def luas_trapesium():  # daftar luas bangun datar
+    # belum ada isi
     luasbangundatar()
 
 
-def luas_jajargenjang():
+def luas_jajargenjang():  # daftar luas bangun datar
+    # belum ada isi
     luasbangundatar()
 
 
@@ -375,19 +377,19 @@ def daftarlist():
     print(">>>>>>>>>>>>>>>>>>>")
     menu = input('input menu: ')
     print(">>>>>>>>>>>>>>>>>>>")
-    if menu=='1':
+    if menu == '1':
         luasbangundatar()
-    elif menu=='2':
+    elif menu == '2':
         deret()
-    elif menu=='3':
+    elif menu == '3':
         kalkulus()
-    elif menu=='0':
+    elif menu == '0':
         exit()
 
 
 def luasbangundatar():
     print("""
-    
+
     |>+---+----------------------------------------------<|
     |>| 1 | LUAS BANGUN DATAR                            <|
     |>+---+----------------------------------------------<|
@@ -404,19 +406,19 @@ def luasbangundatar():
     |>___________________________________________________<|
     """)
     menu = input("select menu: ")
-    if menu=='1':
+    if menu == '1':
         luas_segitiga()
-    elif menu=='2':
+    elif menu == '2':
         luas_persegi()
-    elif menu=='3':
+    elif menu == '3':
         luas_persegiPanjang()
-    elif menu=='4':
+    elif menu == '4':
         luas_lingkaran()
-    elif menu=='5':
+    elif menu == '5':
         luas_trapesium()
-    elif menu=='0':
+    elif menu == '0':
         daftarlist()
-    elif menu=='00':
+    elif menu == '00':
         exit()
 
 
@@ -480,9 +482,9 @@ def deret():
         print("jumlah luas               :%.2f" % (c11))
         print("-----------------------------------------------------------------")
         menu = input('try again(y/n)? ')
-        if menu=='y' or menu=='Y':
+        if menu == 'y' or menu == 'Y':
             print()
-        elif menu=='n' or menu=='N':
+        elif menu == 'n' or menu == 'N':
             daftarlist()
 
 
@@ -494,29 +496,34 @@ def kalkulus():
     |>^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^<|
     |>                        menu:                      <|
     |>1.  PART 1(FUNGSI LINEAR)--------------------------<|
-    |>2.  PART 2(SISTEM BILANGAN REAL)-------------------<|
+    |>?.  PART 2(SISTEM BILANGAN REAL)-------------------<|
     |>3.  PART 3(PERSAMAAN DAN PERTIDAKSAMAAN------------<|
-    |>4.  PART 4(PERTIDAKSAMAAN IRASIONAL)---------------<|
-    |>5.  PART 5(QUIS)-----------------------------------<|
-    |>6.  PART 6(LIMIT FUNGSI)---------------------------<|
-    |>7.  PART 7(LIMIT FUNGSI)---------------------------<|
-    |>8.  PART 8(TURUNAN FUNGSI)-------------------------<|
-    |>9.  PART 9(MID)------------------------------------<|
-    |>10. PART 10(SISTEM BILANGAN REAL DAN FUNGSI)-------<|
-    |>11. PART 11(LINEAR TENTU DAN TAK TENTU)------------<|
-    |>12. PART 12(INTEGRAL)------------------------------<|
-    |>13. PART 13(INTEGRAL GANDA)------------------------<|
+    |>?.  PART 4(PERTIDAKSAMAAN IRASIONAL)---------------<|
+    |>?.  PART 5(QUIS)-----------------------------------<|
+    |>?.  PART 6(LIMIT FUNGSI)---------------------------<|
+    |>?.  PART 7(LIMIT FUNGSI)---------------------------<|
+    |>?.  PART 8(TURUNAN FUNGSI)-------------------------<|
+    |>?.  PART 9(MID)------------------------------------<|
+    |>??. PART 10(SISTEM BILANGAN REAL DAN FUNGSI)-------<|
+    |>??. PART 11(LINEAR TENTU DAN TAK TENTU)------------<|
+    |>??. PART 12(INTEGRAL)------------------------------<|
+    |>??. PART 13(INTEGRAL GANDA)------------------------<|
     |>0.  back-------------------------------------------<|
     |>00. exit-------------------------------------------<|
     |>___________________________________________________<|
     """)
+    print('Note! ? kosong')
     menu = input('pilih menu: ')
-    if menu=='1':
+    if menu == '1':
         part1()
     # elif menu=='2':
     #     part2()
-    elif menu=='3':
-        part3() #persamaan--------input c masih error jika valuenya positif
-    daftarlist()
+    elif menu == '3':
+        part3()  # persamaan--------input c masih error jika valuenya positif
+    elif menu == '0':
+        daftarlist()
+    elif menu == '00':
+        exit()
+
 
 daftarlist()
