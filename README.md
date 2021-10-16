@@ -3,7 +3,7 @@
  
 ```jika mempermudah kenapa enggak```
 
-```Tujuan: -Mempermudah pengerjaan -Membantu Orang```
+```Tujuan:``` ```Mempermudah pengerjaan``` ```Membantu Orang```
 
 ```Penerapan:```
 ```Kalkulus```
