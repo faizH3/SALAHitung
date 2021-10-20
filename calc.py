@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 import math
 
 
@@ -230,6 +231,7 @@ def luas_persegi():  # daftar luas bangun datar
 
 def luas_persegiPanjang():  # daftar luas bangun datar
     while True:
+        print('2. luas persegi')
         print('3. luas persegi panjang')
         print('Ditanya: \n'
               '1. luas\n'
