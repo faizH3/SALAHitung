@@ -25,7 +25,8 @@ def Lbd():
         l_persegi()
     elif menu == '3':
         l_persegipanjang()
-    # elif menu == '4':
+    elif menu == '4':
+        l_lingkaran()
     # elif menu == '5':
     # elif menu == '6':
     # elif menu == '0':
@@ -157,7 +158,7 @@ def l_persegipanjang():  # daftar
         #end l_persegipanjang
 
 #lingkarang
-def luas_lingkaran():  # daftar
+def l_lingkaran():  # daftar
     while True:
         print(
             'diketahui:\n'
@@ -199,6 +200,7 @@ def luas_lingkaran():  # daftar
                     '     = %s x %s **2\n'
                     ''
                 )
+                # end lingkaran
         elif menu == '3':
             print()
         elif menu == '0':
